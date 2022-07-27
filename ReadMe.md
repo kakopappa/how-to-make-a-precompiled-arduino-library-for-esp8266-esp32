@@ -1,19 +1,23 @@
 **Step 1:**
 
-Create hello.cpp and hello.h and add the implementation.
-
-Example files are in lib folder.
+Create ```hello.cpp``` and ```hello.h``` and add the implementation. Example in the lib folder returns the sum of two integers
 
 **Step 2:**
 
-Make the archive file (.a) using xtensa-esp32-elf-gcc.exe for ESP32 and use xtensa-lx106-elf-gcc for ESP8266
+Make the archive file (.a) using ```xtensa-esp32-elf-gcc.exe``` for ESP32 and use ```xtensa-lx106-elf-gcc``` for ESP8266
 
+For ESP32
+
+```
 xtensa-esp32-elf-gcc.exe -c hello.cpp -o libhello.o
 xtensa-esp32-elf-ar.exe crf libhello.a libhello.o
+```
 
-Note: xtensa-esp32-elf-gcc.exe is located here if you have installed ESP32 in your arduino IDE. 
+Note: ```xtensa-esp32-elf-gcc.exe``` is located here if you have installed ESP32 in your arduino IDE. 
 You may want to add this path to system env for easy access.
+```
 C:\Users\<USERNAME>\AppData\Local\Arduino15\packages\esp32\tools\xtensa-esp32s2-elf-gcc\gcc8_4_0-esp-2021r2-patch3\bin\
+```
 
 Now you should have a libhello.a in the path.
 
