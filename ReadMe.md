@@ -26,7 +26,7 @@ Now you should have a libhello.a in the path.
 
 Invoke the function from Ardunio sketch. example.ino
 
-``
+```
 #include <hello.h> // hello.h header from our library  (arduino-helloworld-lib)
 
 #define BAUD_RATE  9600
@@ -42,7 +42,7 @@ void loop() {
    Serial.println(result);
    delay(1000);
 }
-``
+```
 
 
 
